@@ -45,46 +45,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/img_slide_header_layout"
         android:layout_marginTop="10dp"
-        android:background="@drawable/border" >
+        android:background="@drawable/border"
+        android:paddingBottom="10dp">
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/view_pager"
-            android:layout_width="fill_parent"
-            android:layout_height="150dp" />
-
-        <TextView
-            android:id="@+id/img_name"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/indicator"
-            android:background="#88343434"
-            android:ellipsize="end"
-            android:paddingBottom="2dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="2dp"
-            android:paddingTop="2dp"
-            android:singleLine="true"
-            android:textColor="#ededed" />
-
-        <ua.icedragon.imageslideshow.utils.CirclePageIndicator
-            android:id="@+id/indicator"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/view_pager"
-            android:padding="10dp" />
+        <ua.icedragon.imageslideshow.widget.CardsSliderView
+            android:id="@+id/cards_slider_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </RelativeLayout>
-
-    <View
-        android:id="@+id/div_a"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_below="@+id/img_slideshow_layout"
-        android:background="@color/view_divider_color" />
-
-    <View
-        android:id="@+id/div_b"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_below="@+id/div_a"
-        android:background="@color/sliding_list_divider_color" />
 </RelativeLayout>
